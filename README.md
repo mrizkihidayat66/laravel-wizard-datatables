@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About This Repository
+## About Repository
 
 This repository demonstrates the implementation of a multi-step wizard form and DataTables in Laravel 11. The project includes:
 
