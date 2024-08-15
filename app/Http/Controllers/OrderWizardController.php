@@ -42,4 +42,20 @@ class OrderWizardController extends Controller
         ProductStep::class,
         OrderStep::class,
     ];
+
+    public function apiProductDT()
+    {
+        /** @var \App\Steps\Order\ProductStep */
+        $step = $this->wizard()->stepRepo()->find('product');
+
+        return $step->apiProductDT();
+    }
+
+    public function apiCouponDT()
+    {
+        /** @var \App\Steps\Order\ProductStep */
+        $step = $this->wizard()->stepRepo()->find('product');
+
+        return $step->apiCouponDT();
+    }
 }

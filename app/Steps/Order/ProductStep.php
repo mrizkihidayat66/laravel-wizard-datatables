@@ -63,8 +63,18 @@ class ProductStep extends Step
         return app(\App\DataTables\OrderProductDataTable::class);
     }
 
+    public function apiProductDT()
+    {
+        return $this->getProductDT()->ajax();
+    }
+
     public function getCouponDT()
     {
         return app(\App\DataTables\OrderCouponDataTable::class);
+    }
+
+    public function apiCouponDT()
+    {
+        return $this->getCouponDT()->ajax();
     }
 }

@@ -25,7 +25,7 @@ class OrderProductDataTable extends DataTable
             ->editColumn('created_at', function ($product) {
                 return $product->created_at ? $product->created_at : null;
             })
-            ->addColumn('action', 'add to chart')
+            ->addColumn('action', 'Add to Cart')
             ->setRowId('id');
     }
 
@@ -47,7 +47,7 @@ class OrderProductDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->ajax([
-                        'url'           => route('orders.order') . '/product',
+                        'url'           => route('orders.order.product.api'),
                         'type'          => 'GET',
                         'dataType'      => 'json',
                         'contentType'   => 'application/json',

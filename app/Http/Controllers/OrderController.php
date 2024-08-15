@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\OrderCouponDataTable;
 use App\DataTables\OrderDataTable;
+use App\DataTables\OrderProductDataTable;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -61,5 +63,15 @@ class OrderController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function getProductDT(OrderProductDataTable $dataTables)
+    {
+        return $dataTables->ajax();
+    }
+
+    public function getCouponDT(OrderCouponDataTable $dataTables)
+    {
+        return $dataTables->ajax();
     }
 }

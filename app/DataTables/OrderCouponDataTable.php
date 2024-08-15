@@ -25,7 +25,7 @@ class OrderCouponDataTable extends DataTable
             ->editColumn('created_at', function ($coupon) {
                 return $coupon->created_at ? $coupon->created_at : null;
             })
-            ->addColumn('action', 'use')
+            ->addColumn('action', 'Use')
             ->setRowId('id');
     }
 
@@ -47,7 +47,7 @@ class OrderCouponDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->ajax([
-                        'url'           => route('orders.order') . '/product',
+                        'url'           => route('orders.order.coupon.api'),
                         'type'          => 'GET',
                         'dataType'      => 'json',
                         'contentType'   => 'application/json',

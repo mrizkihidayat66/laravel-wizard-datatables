@@ -16,12 +16,12 @@ This repository demonstrates the implementation of a multi-step wizard form and 
 
 This project serves as a practical example for developers looking to implement complex form flows and robust data management in Laravel 11 applications.
 
-<img src="public/assets/img/preview/1.jpg" width="200">
-<img src="public/assets/img/preview/2.jpg" width="200">
-<img src="public/assets/img/preview/3.jpg" width="200">
-<img src="public/assets/img/preview/4.jpg" width="200">
-<img src="public/assets/img/preview/5.jpg" width="200">
-<img src="public/assets/img/preview/6.jpg" width="200">
+<img src="public/assets/img/preview/1.jpg" width="250">
+<img src="public/assets/img/preview/2.jpg" width="250">
+<img src="public/assets/img/preview/3.jpg" width="250">
+<img src="public/assets/img/preview/4.jpg" width="250">
+<img src="public/assets/img/preview/5.jpg" width="250">
+<img src="public/assets/img/preview/6.jpg" width="250">
 
 ## About Laravel
 

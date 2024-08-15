@@ -20,3 +20,8 @@ Route::resource('orders', OrderController::class)
      ->except(['show']);
 
 Wizard::routes('/orders/order', OrderWizardController::class, 'orders.order');
+
+Route::get('orders/order/product/api', [OrderWizardController::class, 'apiProductDT'])
+     ->name('orders.order.product.api');
+Route::get('orders/order/coupon/api', [OrderWizardController::class, 'apiCouponDT'])
+     ->name('orders.order.coupon.api');

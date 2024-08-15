@@ -14,7 +14,7 @@
             <div class="col-12">
                 <div class="section-title">Products</div>
 
-                <div class="table-responsive">
+                <div class="table-responsive mb-4">
                     <table class="table table-sm">
                         {{ $dtProduct->html()->table() }}
                     </table>
@@ -24,7 +24,7 @@
             <div class="col-12">
                 <div class="section-title">Coupons</div>
 
-                <div class="table-responsive">
+                <div class="table-responsive mb-2">
                     <table class="table table-sm">
                         {{ $dtCoupon->html()->table() }}
                     </table>
